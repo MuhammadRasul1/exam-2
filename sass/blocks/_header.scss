@@ -1,0 +1,126 @@
+/* Header */
+
+.header {
+    padding-top: 64px;
+    padding-bottom: 54px;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__burger-btn {
+    display: none;
+}
+
+.header__nav-list {
+    @include list-unstyled;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header__nav-item:not(:last-child) {
+    margin-right: 42px;
+}
+
+.header__nav-link {
+    color: var(--primary-color-black);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.header__nav-link:hover {
+    color: var(--primary-color-green);
+}
+
+@include breakpoint-down(768px) {
+    .header {
+        padding-bottom: 47px;
+    }
+}
+
+@include breakpoint-down(430px) {
+    .header {
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+
+    .header__burger-btn {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;    
+        padding: 40px 65px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    
+    .header__nav-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .header__nav-link {
+        color: #FFF;
+    }
+    
+    .header.header--open .header__nav {
+        display: block;
+        position: fixed;
+        top: 88px;
+        right: 32px;
+        background-color: #33323D;
+    }
+
+    .header__burger-btn {
+        position: relative;
+        display: block;
+        width: 24px;
+        height: 13px;
+        border: none;
+        background-color: transparent;
+        z-index: 10;
+    }
+    
+    .header__burger-btn span {
+        position: absolute;
+        width: 24px;
+        height: 1px;
+        left: 0;
+        background: var(--primary-color-black);
+        transition: transform .5s, opacity .5s;
+    }
+    
+    .header__burger-btn span:nth-child(1) {
+        transform: translateY(-7px);
+    }
+    
+    .header__burger-btn span:nth-child(3) {
+        transform: translateY(7px);
+    }
+    
+    .header.header--open .header__burger-btn span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+    
+    .header.header--open .header__burger-btn span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .header.header--open .header__burger-btn span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }     
+}

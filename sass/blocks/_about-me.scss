@@ -1,0 +1,112 @@
+/* about me */
+
+.about-me {
+    padding-top: 34px;
+    padding-bottom: 42px;
+}
+
+.about-me__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me__right {
+    position: relative;
+    max-width: 350px;
+}
+
+.about-me__right::before {
+    position: absolute;
+    opacity: 0.15;
+    background: #33323D;
+    top: -50px;
+    left: 0;
+    width: 350px;
+    height: 1px;
+    content: "";
+}
+
+.about-me__right::after {
+    position: absolute;
+    opacity: 0.15;
+    background: #33323D;
+    bottom: -46px;
+    left: 0;
+    width: 350px;
+    height: 1px;
+    content: "";
+}
+
+.about-me__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px; 
+    letter-spacing: -0.357px;
+}
+
+.about-me__desc {
+    margin-top: 28px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 30px; 
+}
+
+@include breakpoint-down(955px) {
+    .about-me {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .about-me__img {
+        width: 281px;
+        height: 600px;
+    }
+
+    .about-me__right {
+        max-width: 339px;
+    }
+
+    .about-me__right::before {
+        top: -50px;
+        width: 339px;
+    }
+    
+    .about-me__right::after {
+        bottom: -47px;
+        width: 339px;
+    }
+}
+
+@include breakpoint-down(690px) {
+    .about-me__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-me__img {
+        width: 311px;
+        height: 346px;
+    }
+    
+    .about-me__right {
+        margin-top: 65px;
+        max-width: 311px;
+    }
+    
+    .about-me__right::before {
+        top: -32px;
+        max-width: 311px;
+        width: 100%;
+    }
+    
+    .about-me__right::after {
+        bottom: -51px;
+        max-width: 311px;
+        width: 100%;
+    }
+}

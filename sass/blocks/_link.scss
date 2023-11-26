@@ -1,0 +1,21 @@
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 17px 35px 17px 32px;
+    border: 1px solid #33323D;
+    background: none;
+    color: #33323D;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: background-color 0.8s;
+}
+
+.link:hover {
+    background-color: #33323D;
+    color: #fafafa;
+}
+
+.link:disabled {
+    opacity: 0.2;
+}

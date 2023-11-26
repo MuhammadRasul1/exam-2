@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam - Contact</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo" src="img/icon/header-logo.svg" alt="logo Combined Shape" width="61" height="32">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="contact.html">CONTACT ME</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger-btn js-burger-btn" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="touch">
+            <div class="container touch__wrapper">
+                <h1 class="visually-hidden">Contact me</h1>
+                <h2 class="touch__title">Get in Touch</h2>
+                <div class="touch__right">
+                    <p class="touch__desc">I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
+                    <ul class="touch__list">
+                        <li class="touch__item">
+                            <a class="touch__icon-link" href="#">
+                                <img class="touch__icon" src="img/icon/cat-white.svg" alt="cat" width="25" height="24">
+                            </a>
+                        </li>
+                        <li class="touch__item">
+                            <a class="touch__icon-link" href="#">
+                                <img class="touch__icon" src="img/icon/twitter-white.svg" alt="twitter" width="24" height="20">
+                            </a>
+                        </li>
+                        <li class="touch__item">
+                            <a class="touch__icon-link" href="#">
+                                <img class="touch__icon" src="img/icon/linked-in-white.svg" alt="linked in" width="24" height="24">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact-me">
+            <div class="container contact-me__wrapper">
+                <h2 class="contact-me__title">Contact Me</h2>
+                <form class="contact-me__form" action="https://echo.htmlacademy.ru" method="get">
+                    <div class="contact-me__form-wrapper">
+                        <label class="contact-me__label" for="name">Name</label>
+                        <input class="contact-me__input" name="name" id="name" type="text" minlength="2" placeholder="Jane Appleseed" required>
+                    </div>
+                    <div class="contact-me__form-wrapper">
+                        <label class="contact-me__label" for="email">Email Address</label>
+                        <input class="contact-me__input" name="email" id="email" type="email" minlength="5" placeholder="email@example.com" required>
+                    </div>
+                    <div class="contact-me__form-wrapper">
+                        <label class="contact-me__label" for="message">Message</label>
+                        <textarea class="contact-me__input contact-me__input--active" name="message" id="message" minlength="5" placeholder="How can I help?" cols="30" rows="6"></textarea>
+                    </div>
+                    <button class="contact-me__btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item-active">
+                        <a class="footer__nav-logo" href="index.html">
+                            <img src="img/icon/footer-logo.svg" alt="logo Combined Shape" width="61" height="32">
+                        </a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a  class="footer__nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a  class="footer__nav-link" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a  class="footer__nav-link" href="contact.html">CONTACT ME</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__media-list">
+                <li class="footer__media-item">
+                    <a class="footer__media-link" href="#">
+                        <img class="footer__media-img" src="img/icon/cat.svg" alt="cat" width="25" height="24">
+                    </a>
+                </li>
+                <li class="footer__media-item">
+                    <a class="footer__media-link" href="#">
+                        <img class="footer__media-img" src="img/icon/twitter.svg" alt="twitter" width="24" height="20">
+                    </a>
+                </li>
+                <li class="footer__media-item">
+                    <a class="footer__media-link" href="#">
+                        <img class="footer__media-img" src="img/icon/linked-in.svg" alt="linked-in" width="24" height="24">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

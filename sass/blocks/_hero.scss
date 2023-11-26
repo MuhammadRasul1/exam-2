@@ -1,0 +1,132 @@
+/* hero */
+
+.hero {
+    padding-bottom: 116px;
+}
+
+.hero__wrapper {
+    max-width: 1111px;
+    margin: 0 auto;
+    padding-top: 243px;
+    background-image: url(../img/hero-bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__content-wrapper {
+    display: inline-block;
+    padding-top: 56px;
+    padding-right: 55px;
+    background-color: #fff;
+}
+
+.hero__title {
+    max-width: 390px;
+    margin-top: 0;
+    margin-bottom: 53px;
+    font-family: Ibarra Real Nova;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; 
+    letter-spacing: -0.446px;
+}
+
+.hero__btn-wrapper {
+    max-width: 200px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    background-color: #203A4C;
+}
+
+.hero__btn-wrapper:hover {
+    background-color: #5FB4A2;
+}
+
+.hero__btn-icon {
+    height: 48px;
+}
+
+.hero__btn-img:hover rect{
+    fill: #5FB4A2;
+}
+
+.hero__btn-img:hover path{
+    stroke: #fff;
+}
+
+.hero__btn-link {
+    padding: 17px 37px;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@include breakpoint-down(768px) {
+    .hero {
+        padding-bottom: 76px;
+    }
+    
+    .hero__wrapper {
+        padding-top: 322px;
+        background-image: url(../img/hero-tablet-img.jpg);
+        background-size: contain;
+    }
+    
+    .hero__content-wrapper {
+        padding-right: 56px;
+    }
+    
+    .hero__title {
+        max-width: 458px;
+        margin-bottom: 48px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42px; 
+        letter-spacing: -0.357px;
+    } 
+}
+
+@include breakpoint-down(375px) {
+    .hero__wrapper {
+        padding-top: 271px;
+        background-image: url(../img/hero-mobile.jpg);
+    }
+    
+    .hero__content-wrapper {
+        margin-top: 24px;
+        padding-top: 0;
+        padding-right: 0;
+        background-color: var(--secondary-color-white);
+    }
+    
+    .hero__title {
+        max-width: 311x;
+        margin-bottom: 32px;
+    }
+    
+    .hero__btn-wrapper {
+        max-width: 200px;
+        display: flex;
+        align-items: center;
+        background-color: #203A4C;
+    }
+    
+    .hero__btn-icon {
+        height: 48px;
+    }
+    
+    .hero__btn-link {
+        padding: 17px 37px;
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}

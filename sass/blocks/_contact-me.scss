@@ -1,0 +1,135 @@
+/* contact-me */
+
+.contact-me {
+    padding-bottom: 109px;
+}
+
+.contact-me__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.contact-me__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+}
+
+.contact-me__form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me__form-wrapper:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.contact-me__label {
+    margin-bottom: 8px;
+    opacity: 0.8;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px; 
+}
+
+.contact-me__input {
+    width: 635px;
+    border: none;
+    padding-left: 16px;
+    height: 48px;
+    background-color: rgb(51, 50, 62, 0.1)
+}
+
+.contact-me__input:focus {
+    border: 1px solid #5FB4A2;
+    background: rgba(51, 50, 61, 0.10);
+}
+
+.contact-me__input::placeholder {
+    color: #33323D;
+    opacity: 0.4;
+    font-size: 13px;
+    line-height: 30px; 
+}
+
+.contact-me__input--active {
+    height: 96px;
+}
+
+.contact-me__btn {
+    background: #203A4C;
+    padding: 17px 42px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Public Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: background-color 1s;
+}
+
+.contact-me__btn:hover {
+    background-color: #5FB4A2;
+}
+
+@include breakpoint-down(900px) {
+    .contact-me {
+        padding-bottom: 96px;
+    }
+    
+    .contact-me__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-me__title {
+        margin-bottom: 32px;
+    }
+    
+    .contact-me__input {
+        width: 689px;
+    }
+}
+
+@include breakpoint-down(710px) {
+    .contact-me {
+        padding-bottom: 80px;
+    }
+
+    .contact-me__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    .contact-me__title {
+        margin-bottom: 24px;
+    }
+    
+    .contact-me__input {
+        width: 311px;
+    }  
+}
+
+@include breakpoint-down(375px) {
+    .contact-me__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    } 
+}
+
+@include breakpoint-down(330px) {
+    .contact-me__input {
+        width: 211px;
+    }  
+}
